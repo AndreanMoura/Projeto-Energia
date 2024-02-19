@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energia website design</title>
+
+    <!-- The callback parameter is required, so we use console.debug as a noop -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+
+</head>
+<body>
+<!-- header section starts  -->
+
+<header class="header">
+    <div>
+    <a href="#">
+        <img class="img" src="./img/newlogo.png" alt="">
+    </a>
+    </div>
+
+    
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">Sobre nós</a>
+        <a href="#menu">Soluçoes</a>
+        <a href="#review">clientes</a>
+        <a href="#contact">contato</a>
+        <a href="#blogs">Noticias</a>
+    </nav>
+
+    <nav>
+     <div class="icons">
+             <div><i class="fas fa-search fa-2x" id="search-btn"></i></div>
+             <div><i class="fa-brands fa-facebook fa-2x"></i></div>
+             <div><i class="fa-brands fa-instagram fa-2x"></i></div>
+             <div><i class="fa-brands fa-whatsapp fa-2x"></i></div>
+     </div>
+    </nav>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+    <div class="cart-items-container">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-1.png" alt="">
+            <div class="content">
+                <h3>Simulação  01</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-2.png" alt="">
+            <div class="content">
+                <h3>cart item 02</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-3.png" alt="">
+            <div class="content">
+                <h3>cart item 03</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-4.png" alt="">
+            <div class="content">
+                <h3>cart item 04</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <a href="#" class="btn">checkout now</a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>4W Energias</h3>
+        <p>um papel crucial na promoção da eficiência energética <br>e no desenvolvimento de tecnologias inovadoras <br> para a produção e armazenamento de energia.</p>
+        <a href="#" class="btn">Fale conosco</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>Sobre</span> nós </h1>
+
+    <div class="row">
+
+        <div class="content">
+            <div class="image">
+                <img src="./img/energia solar.jpg" alt="">
+            </div>
+    
+            <h3>O que torna nossa empresa tão especial?</h3>
+            <p>Uma empresa dedicada, com profissionais comprometidos, representa um ambiente onde a excelência e a realização se encontram. Tal empresa não apenas atinge seus objetivos comerciais, mas também cultiva uma cultura de respeito, integridade e crescimento mútuo</p>
+            <p>A dedicação empresarial inclui um compromisso com altos padrões éticos. Profissionais dedicados agem com integridade, honestidade e respeito em todas as interações comerciais e pessoais.</p>
+            <a href="#" class="btn">Saber mais</a>
+        </div>
+
+        <div class="content">
+            <div class="image">
+                <img src="./img/energia solar.jpg" alt="">
+            </div>
+            <h3>Missão</h3>
+            <p>"Nosso compromisso é promover a transição para um futuro energético sustentável, oferecendo soluções inovadoras e acessíveis em energia renovável. Buscamos maximizar o potencial dos recursos naturais, fornecendo energia limpa e confiável para impulsionar o progresso econômico e social."
+                Visão: "Ser reconhecida como uma líder em gestão de ativos de energia renovável, conectando eficientemente produtores e consumidores em um ecossistema energético sustentável e colaborativo. Queremos ser um agente de mudança positiva, impulsionando o desenvolvimento sustentável e a mitigação das mudanças climáticas.</p>
+            <a href="#" class="btn">Saber mais</a>
+        </div>
+        <div class="content">
+            <div class="image">
+                <img src="./img/energia solar.jpg" alt="">
+            </div>
+            <h3>Valores</h3>
+            <p>Sustentabilidade: Comprometemo-nos a promover práticas que protejam e preservem o meio ambiente para as gerações futuras. Inovação: Buscamos constantemente novas tecnologias e abordagens para otimizar a geração, distribuição e uso de energia renovável. Transparência: Agimos com integridade e transparência em todas as nossas operações e relacionamentos. Colaboração: Valorizamos parcerias construtivas e colaborativas com todas as partes interessadas, visando objetivos comuns de sustentabilidade. Responsabilidade Social: Contribuímos para o desenvolvimento das comunidades onde atuamos, promovendo inclusão e prosperidade para todo</p>
+            <a href="#" class="btn">Saber mais</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- menu section starts  -->
+
+<section class="menu" id="menu">
+
+    <h1 class="heading"> Soluçoes <span>Para voce</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="./img/energia solar.jpg" alt="">
+            <h3>Energia Solar Residencial e Comercial</h3>
+            <div class="price">Promova a instalação de painéis solares para residências e empresas <span></span></div>
+            <a href="#" class="btn">Quero saber mais</a>
+        </div>
+
+        <div class="box">
+            <img src="img/energia1.jpg" alt="">
+            <h3>Sistemas de Energia Eólica</h3>
+            <div class="price">benefícios dessa fonte renovável de energia, como baixo impacto ambiental e alta eficiência <span></span></div>
+            <a href="#" class="btn">Quero saber mais</a>
+        </div>
+
+        <div class="box">
+            <img src="img/energia de armazenamento.jpg" alt="">
+            <h3>Armazenamento de Energia</h3>
+            <div class="price">como baterias residenciais e sistemas de armazenamento em larga escala<span></span></div>
+            <a href="#" class="btn">Quero saber mais</a>
+        </div>
+
+        <div class="box">
+            <img src="img/energia.jpg" alt="">
+            <h3>Eficiência Energética</h3>
+            <div class="price">Forneça dicas e soluções para melhorar a eficiência energética em residências, empresas e indústrias <span></span></div>
+            <a href="#" class="btn">Quero saber mais</a>
+        </div>
+
+        <div class="box">
+            <img src="img/cowomen-ZKHksse8tUU-unsplash.jpg" alt="">
+            <h3>Consultoria em Energia</h3>
+            <div class="price"> Ofereça serviços de consultoria em energia para ajudar os clientes a desenvolver estratégias personalizadas para atender às suas necessidades  <span></span></div>
+            <a href="#" class="btn">Quero saber mais</a>
+        </div>
+
+        <div class="box">
+            <img src="img/monitoramento e gestão.jpg" alt="">
+            <h3>Monitoramento e Gestão de Energia</h3>
+            <div class="price"> monitoramento e gestão de energia para ajudar os clientes a acompanhar seu consumo de energia e identificar oportunidades de economia <span></span></div>
+            <a href="#" class="btn">Quero saber mais</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- menu section ends -->
+
+
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> Avaliação <span> dos clientes</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="" alt="" class="quote">
+            <p>Estou extremamente satisfeita com os serviços da 4Wenergia. A transição para energia solar foi tranquila e eficiente. Desde o primeiro contato até a instalação dos painéis, a equipe da empresa foi profissional e prestativa. Agora, desfruto de uma energia limpa e econômica em minha casa. Recomendo fortemente!.</p>
+            <img src="img/marcela.jfif" class="user" alt="">
+            <h3>Marcela Silva</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p>A 4Wenergia superou todas as minhas expectativas. Optei por instalar um sistema de energia solar em minha empresa e fiquei impressionado com a qualidade do serviço e o profissionalismo da equipe. Além disso, a redução significativa em nossas contas de energia foi uma grande vantagem. Parabéns à equipe pelo excelente trabalho!.</p>
+            <img src="img/ricardo.jpg" class="user" alt="">
+            <h3>Ricardo Santos</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p>Contratar a 4Wenergia para instalar painéis solares em minha residência foi a melhor decisão que já tomei em relação à energia. Desde o início, fui orientada de forma clara e transparente sobre todo o processo. A instalação foi rápida e eficiente, e agora tenho a tranquilidade de saber que estou contribuindo para um meio ambiente mais saudável. Obrigada, [Nome da sua empresa], pelo excelente serviço prestado!.</p>
+            <img src="img/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg" class="user" alt="">
+            <h3>Ana Oliveira</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contato</span>  </h1>
+
+    <div class="row">
+
+        <iframe class="map" src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.4404599406535!2d-49.24393032597235!3d-16.7048606460305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef1b3f0150831%3A0xbac56882aa25538c!2sMetropolitan%20Mall!5e0!3m2!1spt-BR!2sbr!4v1708305664624!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        
+        <form action="">
+            <h3>Entrar em contato</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="nome">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="numero">
+            </div>
+            <input type="submit" value="Entrar em contato" class="btn">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> outras <span>noticias</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="img/energia nuclear.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Cientistas batem recorde de fusão nuclear para obter energia limpa</a>
+                <span>by admin / 21st may, 2021</span>
+                <p>Cientistas e engenheiros perto da cidade inglesa de Oxford estabeleceram um recorde de energia de fusão nuclearUtilizando o Joint European Torus (JET) – uma enorme máquina em forma de donut conhecida como tokamak – os cientistas mantiveram um recorde de 69 megajoules de energia de fusão durante cinco segundos, utilizando apenas 0,2 miligramas de combustível.</p>
+                <a href="https://www.cnnbrasil.com.br/tecnologia/cientistas-batem-recorde-de-fusao-nuclear-para-obter-energia-limpa/" class="btn">Veja mais </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="img/brasil.jfif" alt="">
+            </div>
+            <div class="content">
+                <a href="https://www.cnnbrasil.com.br/economia/macroeconomia/brasil-registra-recorde-na-producao-de-energia-renovavel-em-2023-diz-estudo/" class="title">Brasil registra recorde na produção de energia renovável em 2023, diz estudo</a>
+                <span>by admin / 18st Feb, 2024</span>
+                <p>um dos protagonistas na pauta de energia limpa no mundo, Brasil bateu recorde. Em 2023, 93,1% de toda eletricidade gerada no país, veio de fontes renováveis, como hidrelétricas, parques eólicos, fazendas solares e usinas a biomassa, mostra estudo da Comercialização de Energia Elétrica (CCEE) antecipado para a CNN.</p>
+                <a href="#" class="btn">Veja mais</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="img/Projeção.jfif" alt="">
+            </div>
+            <div class="content">
+                <a href="https://www.cnnbrasil.com.br/economia/macroeconomia/projecao-de-crescimento-da-carga-eletrica-cai-para-99-em-janeiro-segundo-ons/" class="title">Projeção de crescimento da carga elétrica cai para 9,9% em janeiro, segundo ONS</a>
+                <span>by admin / 21st may, 2021</span>
+                <p>Para as afluências do mês, o ONS elevou sua estimativa para o Sul a 120% da média histórica (ante 97% na previsão da semana anterior) e reduziu para o Norte (65%, ante 73%). Nos outros subsistemas, foram feitos ajustes menores nas previsões, com 64% para o Sudeste/Centro-Oeste (ante 66%) e 42% no Nordeste (ante 41%)</p>
+                <a href="https://www.cnnbrasil.com.br/economia/macroeconomia/projecao-de-crescimento-da-carga-eletrica-cai-para-99-em-janeiro-segundo-ons/" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+        <a href="#home">home</a>
+        <a href="#about">Sobre nós</a>
+        <a href="#menu">Soluçoes</a>
+        <a href="#review">clientes</a>
+        <a href="#contact">contato</a>
+        <a href="#blogs">Noticias</a>
+    </div>
+    <div class="credit">CNPJ: 44.050.069/0001-03 <span>Avenida Deputado Jamel Cecílio, nº 2690,<br> Edifício Metropolitan Mall, Torre Tokyo, sala 605, Jardim
+        Goiás, Goiânia-GO, CEP: 74.810-100</span></div>
+
+    <div class="credit">created by <span>Andrean Moura. web designer</span> | all rights reserved</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+</body>
+</html>
