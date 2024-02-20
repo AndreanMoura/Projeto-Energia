@@ -252,7 +252,7 @@ section{
 .home .content h3{
     font-size: 7rem;
     text-transform: uppercase;
-    color:#eee4e4;
+    color:#ffffff;
 }
 
 .home .content p{
@@ -260,8 +260,9 @@ section{
     font-weight: bold;
     line-height: 1.8;
     padding:1rem 0;
-    color:#f5f0f0;
+    color:#ffffff;
 }
+
 
 .about .row{
     display: flex;
@@ -271,26 +272,29 @@ section{
 }
 
 .about .row .image{
-    flex:1 1 45rem;
+    flex:1 1 4rem;
 }
 
 .about .row .image img{
-    display: inline-block;
-    width: 250px;
-    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+    padding: 10px 10px;
 }
 .about .row .content{
-    flex:45rem;
-    padding:2.5rem;
+    flex:40rem;
+    padding:4.5rem;
 }
 
 .about .row .content h3{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color:#ece4e4;
 }
 
 .about .row .content p{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color:#ccc;
     padding:1rem 0;
     line-height: 1.8;
@@ -304,7 +308,7 @@ section{
 }
 
 .menu .box-container .box{
-    padding:5rem;
+    padding:4rem;
     text-align: center;
     border:var(--border);    
 }
@@ -321,7 +325,7 @@ section{
 
 .menu .box-container .box .price{
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding:.5rem 0;
 }
 
@@ -450,7 +454,7 @@ section{
 
 .contact .row form{
     flex:1 1 45rem;
-    padding:5rem 2rem;
+    padding:4rem 2rem;
     text-align: center;
 }
 
