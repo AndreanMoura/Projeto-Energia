@@ -117,13 +117,24 @@ section{
     display: inline-block;
     padding:.9rem 3rem;
     font-size: 1.7rem;
-    color:#0c0b0b;
+    color:#ffffff;
     background: var(--main-color);
     cursor: pointer;
+    border-radius: 20px;
 }
 
 .btn:hover{
     letter-spacing: .2rem;
+}
+
+.btn i {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    color:#ffffff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: auto;
 }
 
 .header{
@@ -137,8 +148,8 @@ section{
     z-index: 1000;
 }
 
-.header .logo img{
-    height: 6rem;
+.header img{
+    height: 4rem;
 }
 
 
@@ -146,7 +157,7 @@ section{
     margin:0 1rem;
     font-size: 1.8rem;
     font-weight: bolder;
-    color:#7DB61C;
+    color:#ffffff;
 }
 
 .header .navbar a:hover{
@@ -159,14 +170,14 @@ section{
     display: inline-block;
     text-align: center;
     justify-content: center;
-    color:#7DB61C;
+    color:#00ae9d;
     cursor: pointer;
     font-size: 1.5rem;
     margin-left: 2rem;
 }
 
 .header .icons div:hover{
-    color:var(--main-color);
+    color:#7DB61C;
 }
 
 #menu-btn{
@@ -266,7 +277,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background:url(./img/img\ fundo\ new.png) no-repeat;
+    background:url(./img/Design\ sem\ nome.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -291,7 +302,7 @@ section{
     font-weight: bold;
     line-height: 1.8;
     padding:1rem 0;
-    color:#003641;
+    color:#ffffff;
 }
 
 
@@ -715,3 +726,8 @@ section{
     }
 
 }
+
+
+
+
+
