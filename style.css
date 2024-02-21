@@ -4,7 +4,7 @@
     --main-color:#00ae9d;
     --black:#003641;
     --bg:#f7f7f1;
-    --border:.1rem solid rgba(255,255,255,.1);
+    --border:.1rem solid #003641;
 }
 
 *{
@@ -45,10 +45,38 @@ body{
 
 h1{
     text-decoration: none;
-    color: #7DB61C;
+    color: #003641;
     font-weight: bold;
     flex-direction: column;
     
+}
+
+
+header{
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+
+header.rolagem{
+    background-color: #003641;
+    padding: 10px 4%;
+}
+
+header.rolagem a {
+    color: #003641;
+}
+
+header.rolagem a,header.rolagem i{
+    color: #003641;
+}
+
+header.rolagem a,header.rolagem h1{
+    color: darkgray;
 }
 
 
@@ -70,7 +98,7 @@ section{
 
 .heading{
     text-align: center;
-    color: #00ae9d;
+    color: #03776b;
     text-transform: uppercase;
     padding-bottom: 3.5rem;
     font-size: 4rem;
@@ -99,12 +127,11 @@ section{
 }
 
 .header{
-    background: #003641;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding:1.5rem 7%;
-    border-bottom: var(--border);
     position: fixed;
     top:0; left: 0; right: 0;
     z-index: 1000;
@@ -239,7 +266,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background:url(./img/Design\ sem\ nome\ \(2\).png) no-repeat;
+    background:url(./img/img\ fundo\ new.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -252,7 +279,11 @@ section{
 .home .content h3{
     font-size: 7rem;
     text-transform: uppercase;
-    color:#ffffff;
+    color:#49479D;
+}
+
+.home .content span{
+    color: #00AE9D;
 }
 
 .home .content p{
@@ -260,7 +291,7 @@ section{
     font-weight: bold;
     line-height: 1.8;
     padding:1rem 0;
-    color:#ffffff;
+    color:#003641;
 }
 
 
@@ -308,13 +339,14 @@ section{
 }
 
 .menu .box-container .box{
-    padding:4rem;
+    padding:5rem;
     text-align: center;
     border:var(--border);    
 }
 
 .menu .box-container .box img{
-    height: 10rem;
+    width: 45rem;
+    height: 45rem;
 }
 
 .menu .box-container .box h3{
@@ -336,7 +368,7 @@ section{
 }
 
 .menu .box-container .box:hover{
-    background:#fff;
+    background:#00AE9D;
 }
 
 .menu .box-container .box:hover > *{

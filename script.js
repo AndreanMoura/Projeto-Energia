@@ -1,3 +1,10 @@
+window.addEventListener("scroll", function(){
+    let header = this.document.querySelector('.header')
+    header.classList.toggle('rolagem', window.scrollY > 0)
+})
+
+
+
 let navbar = document.querySelector('.navbar');
 
 document.querySelector('#menu-btn').onclick = () =>{
