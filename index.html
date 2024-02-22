@@ -1,403 +1,646 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4W ENERGIA</title>
+<!doctype html>
+<html class="no-js" lang="pt-br">
+<head>	
+<!-- inicio teste mailchimp -->
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/9724055340ed8ac829975ffe4/9d0c359dc892a1fd142979ae6.js");</script>
+<!-- fim teste-->
 
-    <!-- The callback parameter is required, so we use console.debug as a noop -->
-    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&callback=console.debug&libraries=maps,marker&v=beta">
-    </script>
+<meta charset="utf-8">
+  <meta name="description" content="Empresa especializada em geração de energia renovável no desenvolvimento de projetos de energia solar, térmica, elétrica, eólica e hídricas."
+  />
+  <link rel="canonical" href="https://4watt.tech/" />
+  <title>4W Energia - Conectando com o futuro</title>
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="4WaTT - Geração de Energias Renováveis" />
+  <meta property="og:site_name" content="4WaTT Tech">
+  <meta property="og:description" content="Empresa especializada em geração de energia renovável no desenvolvimento de projetos de energia solar, térmica, elétrica, eólica e hídricas."
+  />
+  <meta property="og:url" content="https://4watt.tech/" />
+  <meta property="og:image" content="https://4watt.tech/images/4watt.png">
+  <meta property="og:image:secure_url" content="https://4watt.tech/images/4watt.png" />
+  <meta property="og:image:width" content="1500" />
+  <meta property="og:image:height" content="1500" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:description" content="Empresa especializada em geração de energia renovável no desenvolvimento de projetos de energia solar, térmica, elétrica, eólica e hídricas."
+  />
+  <meta name="twitter:title" content="4WaTT - Geração de Energias Renováveis" />
+  <meta name="twitter:image" content="https://4watt.tech/images/4watt.png" />
+  <meta content="https://www.facebook.com/4watt.tech" property="article:publisher" />
+  <meta content="https://www.facebook.com/4watt.tech" property="article:author" />
+  <meta content="@4watt.tech" name="twitter:site" />
+  <meta content="@4watt.tech" name="twitter:creator" />
+  <meta content="Energia que se renova" name="twitter:card">
+  <meta name="author" content="Leonardo Pedrini, Brunno Bachmann, Yudi Matsunaga">
+  <meta name="robots" content="index, max-snippet:-1, max-image-preview:large" />
+  <meta name="copyright" content="Copyright &copy; 2020" />
+  <meta name="distribution" content="global" />
+  <meta name="revisit-after" content="15 days" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
+	
+<link rel="shortcut icon" href="images/favicon.png" type="image/png">
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/animate.css">
 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <link rel="shortcut icon" href="./img//logo correto.png" type="image/x-icon">
+<link rel="stylesheet" href="css/LineIcons.css">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/slick.css">
+
+<link rel="stylesheet" href="css/default.css">
+
+<link rel="stylesheet" href="css/style.css">
+	
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159744179-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'UA-159744179-1');
+    gtag('config', 'AW-409601615');
+  </script>	
+<!-- Event snippet for Website sale conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-409601615/NrkOCIPv-foBEM-MqMMB',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 
 </head>
 <body>
-    <!--menu-->
-<!-- header section starts  -->
+<!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
 
-<header class="header">
-    <div>
-    <a href="#">
-        <img class="img" src="./img/logo correto.png" alt="">
-    </a>
-    </div>
+<div class="preloader">
+<div class="loader">
+<div class="ytp-spinner">
+<div class="ytp-spinner-container">
+<div class="ytp-spinner-rotator">
+<div class="ytp-spinner-left">
+<div class="ytp-spinner-circle"></div>
+</div>
+<div class="ytp-spinner-right">
+<div class="ytp-spinner-circle"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-    
-    <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#about">Sobre nós</a>
-        <a href="#menu">Soluções</a>
-        <a href="#review">clientes</a>
-        <a href="#contact">contato</a>
-        <a href="#blogs">Notícias</a>
-    </nav>
-
-    <nav>
-     <div class="icons">
-             <div><i class="fas fa-search fa-2x" id="search-btn"></i></div>
-             <div><i class="fa-brands fa-facebook fa-2x"></i></div>
-             <div><i class="fa-brands fa-instagram fa-2x"></a></i></div>
-             <div><i class="fa-brands fa-whatsapp fa-2x"></i></div>
-     </div>
-    </nav>
-
-    <div class="search-form">
-        <input type="search" id="search-box" placeholder="search here...">
-        <label for="search-box" class="fas fa-search"></label>
-    </div>
-
-    <div class="cart-items-container">
-        <div class="cart-item">
-            <span class="fas fa-times"></span>
-            <img src="images/cart-item-1.png" alt="">
-            <div class="content">
-                <h3>Simulação  01</h3>
-                <div class="price">$15.99/-</div>
-            </div>
-        </div>
-        <div class="cart-item">
-            <span class="fas fa-times"></span>
-            <img src="images/cart-item-2.png" alt="">
-            <div class="content">
-                <h3>cart item 02</h3>
-                <div class="price">$15.99/-</div>
-            </div>
-        </div>
-        <div class="cart-item">
-            <span class="fas fa-times"></span>
-            <img src="images/cart-item-3.png" alt="">
-            <div class="content">
-                <h3>cart item 03</h3>
-                <div class="price">$15.99/-</div>
-            </div>
-        </div>
-        <div class="cart-item">
-            <span class="fas fa-times"></span>
-            <img src="images/cart-item-4.png" alt="">
-            <div class="content">
-                <h3>cart item 04</h3>
-                <div class="price">$15.99/-</div>
-            </div>
-        </div>
-        <a href="#" class="btn">checkout now</a>
-    </div>
-
-</header>
-
-<!-- header section ends -->
-
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-    <div class="content">
-        <h3><span>4W</span>ENERGIA</h3>
-        <p>Um papel crucial na promoção da eficiência energética <br> e no desenvolvimento de tecnologias inovadoras <br>para a produção e armazenamento de energia sustentável.</p>
-        <a href="#" class="btn">Fale conosco <i class="fa-brands fa-whatsapp fa-2x"></i></a>
-    </div>
-
+<!--Icone up-->
+<section class="header_area">
+<div class="header_navbar">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<nav class="navbar navbar-expand-lg">
+<a class="navbar-brand page-scroll" href="#inicio">
+<img src="images/logo.png" alt="Logo 4W">
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="toggler-icon"></span>
+<span class="toggler-icon"></span>
+<span class="toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+<ul id="nav" class="navbar-nav ml-auto">
+<li class="nav-item active">
+<a class="page-scroll" href="#inicio">Início</a>
+</li>
+<li class="nav-item">
+<a class="page-scroll" href="#sobre">4WEnergia</a>
+</li>
+<li class="nav-item">
+<a class="page-scroll" href="#servicos">Sobre</a>
+</li>
+<li class="nav-item">
+<!-- <a class="page-scroll" href="#projetos">Projetos</a> -->
+</li>
+<li class="nav-item">
+<!-- <a class="page-scroll" href="#parceiros">Parceiros</a> -->
+</li>
+</ul>
+</div> 
+	<div style="margin-left: 5%;" class="navbar-btn d-none d-sm-inline-block">
+			<a class="main-btn btn-hover" data-scroll-nav="0" target="_blank" onclick="gtag_report_conversion" href="https://wa.me/5541996491719?text=Olá, gostaria de falar com um especialista."><i class="lni lni-whatsapp"></i>&nbsp;&nbsp;&nbsp;Falar Com Especialista</a>
+		</div>
+</nav> 
+</div>
+</div> 
+</div> 
+</div> 
+<div id="inicio" class="header_slider">
+<div class="single_slider bg_cover d-flex align-items-center" style="background-image: url(images/slider-1.jpg)">
+<div class="container">
+<div class="row">
+<div class="col-lg-10 col-md-10">
+<div class="slider_content">
+<h2 class="slider_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">4W Energia<br /></h2>
+<p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.6s">Um papel crucial na promoção da eficiência energética e no desenvolvimento de tecnologias inovadoras para a produção e armazenamento de energia sustentável.</p>
+<a target="_blank" href="https://wa.me/5541996491719?text=Olá, gostaria de solicitar um orçamento." class="main-btn btn-hover wow fadeInUp" onclick="gtag_report_conversion" data-wow-duration="1.3s" data-wow-delay="0.8s"><i class="lni lni-whatsapp"></i>&nbsp;&nbsp;&nbsp;Orçamento Grátis</a>
+</div> 
+</div>
+</div> 
+</div> 
+</div> 
+</div> 
 </section>
 
-<!-- home section ends -->
 
-<!-- about section starts  -->
+<!-- <section id="features" class="features_area pt-100 pb-80">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-md-4">
+<div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+<div class="features_image">
+<img src="images/features-1.jpg" alt="features">
+</div>
+<div class="features_content">
+<h4 class="features_title">Soluções<br/>em Energia</h4><br />
+<a href="/energiasolar" class="main-btn mb-50 btn-hover"><i class="lni lni-circle-plus"></i>&nbsp;&nbsp;&nbsp;Saiba Mais</a>
+</div>
+</div> 
+</div>
+<div class="col-lg-4 col-md-4">
+<div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.6s">
+<div class="features_image">
+<img src="images/features-2.jpg" alt="features">
+</div>
+<div class="features_content">
+<h4 class="features_title">Para geradores<br/>de energia</h4><br />
+<a href="/biotech" class="main-btn mb-50 btn-hover"><i class="lni lni-circle-plus"></i>&nbsp;&nbsp;&nbsp;Saiba Mais</a>
+</div>
+</div> 
+</div>
+<div class="col-lg-4 col-md-4">
+<div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
+<div class="features_image">
+<img src="images/features-3.jpg" alt="features">
+</div>
+<div class="features_content">
+<h4 class="features_title">Projetos de<br/>Engenharia</h4><br />
+<a href="/engenharia" class="main-btn mb-0 btn-hover"><i class="lni lni-circle-plus"></i>&nbsp;&nbsp;&nbsp;Saiba Mais</a>
+</div>
+</div> 
+ </div>
+</div> 
+</div> 
+</section> -->
 
-<section class="about" id="about">
 
-    <h1 class="heading"> <span>Sobre</span> Nós </h1>
+<section id="sobre" class="about_area pt-80 pb-120">
+<div class="about_bg d-none d-lg-block">
+<div class="about_bg_image bg_cover" style="background-image: url(images/about_bg.jpg)"></div>
+</div> 
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<div class="about_image mt-50 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
+<img src="images/about_image.jpg" alt="About">
+</div> 
+</div>
 
-    <div class="row">
-
-        <div class="content">
-            <div class="image">
-                <img src="./img/energia3.jpg" alt="">
-            </div>
-    
-            <h3>Visão</h3>
-            <p>Ser reconhecida como uma líder em gestão de ativos de energia renovável, conectando eficientemente produtores e consumidores em um ecossistema energético sustentável e colaborativo. Queremos ser um agente de mudança positiva, impulsionando o desenvolvimento sustentável e a mitigação das mudanças climáticas</p>
-            <a href="#" class="btn">Saber mais</a>
-        </div>
-
-        <div class="content">
-            <div class="image">
-                <img src="./img/usar em algum lugar.jpeg" alt="">
-            </div>
-            <h3>Missão</h3>
-            <p>Nosso compromisso é promover a transição para um futuro energético sustentável, oferecendo soluções inovadoras e acessíveis em energia renovável. Buscamos maximizar o potencial dos recursos naturais, fornecendo energia limpa e confiável para impulsionar o progresso econômico e social.</p>
-            <a href="#" class="btn">Saber mais</a>
-        </div>
-
-        <div class="content">
-            <div class="image">
-                <img src="./img/energia.jpg" alt="">
-            </div>
-            <h3>Valores</h3>
-            <p>•	Sustentabilidade<br>
-                •	Inovação<br>
-                •	Transparência<br>
-                •	Colaboração<br>
-                •	Responsabilidade Social
-                </p>
-            <a href="#" class="btn">Saber mais</a>
-        </div>
+<div class="col-lg-6">
+<div class="about_content mt-50 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
+<h3 class="sub_title"><span>4W Energia</span></h3>
+<h4 class="main_title">A MELHOR SOLUÇÃO PARA SUA LIBERDADE ENERGÉTICA</h4>
+<p align="justify">Geração distribuída de energia: Se você não atende aos requisitos para mudar para o Mercado Livre de Energia, a geração distribuída é uma opção para economizar na conta de luz. Nesse caso, você pode produzir sua própria energia, controlar a distribuição e usar créditos por até 60 meses para reduzir a conta de luz.
+  </p><p></p>A 4W Energia possibilita, por meio de sua gestão, que a GD Remota e Compartilhada, seja realidade para todos que querem uma energia limpa e mais barata em suas casas e comércios, desta forma oferecemos desconto na tarifa de energia para consumidores de grande ou pequeno porte, de um lado, e de outro a rentabilização do ativo de energia para quem tem geração própria ou quer investir em energia renovável.
+  </p>
+<a target="_blank" href="https://wa.me/5541996491719?text=Olá, gostaria de falar com um especialista." onclick="gtag_report_conversion" class="main-btn btn-hover"><i class="lni lni-whatsapp"></i>&nbsp;&nbsp;&nbsp;Falar Com Especialista</a>
+</div> 
+</div>
+</div> 
+</div> 
 </section>
 
-<!-- about section ends -->
 
-<!-- menu section starts  -->
-
-<section class="menu" id="menu">
-
-    <h1 class="heading"> Soluções <span>Para voce</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="./img/Soluções fotos.png" alt="">
-            <h3>A Melhor Solução Para Sua Liberdade  Energética</h3>
-            <div class="price">Geração Distribuída De Energia: Se Você Não Atende Aos Requisitos Para Mudar Para O Mercado Livre De Energia,<br> A Geração Distribuída É Uma Opção Para Economizar Na Conta De Luz. Nesse Caso, Você Pode Produzir Sua Própria Energia, Controlar A Distribuição E Usar Créditos Por Até 60 Meses Para Reduzir A Conta De Luz. A 4W Energia Possibilita, Por Meio De Sua Gestão, Que A GD Remota E Compartilhada, Seja Realidade Para Todos Que Querem Uma Energia Limpa E Mais Barata Em Suas Casas E Comércios, Desta Forma Oferecemos Desconto Na Tarifa De Energia Para Consumidores De Grande Ou Pequeno Porte, De Um Lado, E De Outro A Rentabilização Do Ativo De Energia Para Quem Tem Geração Própria Ou Quer Investir Em Energia Renovável.</div>
-            <a href="#" class="btn">Quero saber Mais</a>
-        </div>
-       
-
-    </div>
-
+<section id="servicos" class="services_area pt-120 pb-140">
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<div class="section_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+<h4 class="title">Conheça a 4W Energia</h4>
+<div class="line-shape"></div>
+</div> 
+</div>
+</div> 
+<div class="row">
+<div class="col-lg-4 col-sm-6">
+<div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+<div class="services_icon">
+<i class="lni lni-sun"></i>
+</div>
+<div class="services_content">
+<h4 class="title">Missão</h4>
+<p>Nosso compromisso é promover a transição para um futuro energético sustentável, oferecendo soluções inovadoras e acessíveis em energia renovável. Buscamos maximizar o potencial dos recursos naturais, fornecendo energia limpa e confiável para impulsionar o progresso econômico e social.</p>
+</div>
+</div> 
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.6s">
+<div class="services_icon">
+<i class="lni lni-flower"></i>
+</div>
+<div class="services_content">
+<h4 class="title">Visão</h4>
+<p>Ser reconhecida como uma líder em gestão de ativos de energia renovável, conectando eficientemente produtores e consumidores em um ecossistema energético sustentável e colaborativo. Queremos ser um agente de mudança positiva, impulsionando o desenvolvimento sustentável e a mitigação das mudanças climáticas.</p>
+</div>
+</div> 
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
+<div class="services_icon">
+<i class="lni lni-thunder"></i>
+</div>
+ <div class="services_content">
+<h4 class="title">Valores</h4>
+<p>Nossa jornada é guiada pelos pilares da sustentabilidade, inovação e transparência, onde a colaboração e a responsabilidade social são a essência de nossas ações, moldando um futuro mais sustentável e justo para todos.</p>
+</div>
+</div> 
+</div>
+<div class="col-lg-4 col-sm-6">
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.2s">
+</div> 
+</div>
+<div class="col-lg-4 col-sm-6">
+</div>
+</div> 
+</div> 
 </section>
 
-<!-- menu section ends -->
 
 
 
-<!-- Avaliação clientes  -->
 
-<section class="review" id="review">
-
-    <h1 class="heading"> Avaliação <span> dos clientes</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="images/quote-img.png" alt="" class="quote">
-            <p>Contratei a 4W para projetar uma usina de 3MW. Eles reduziram o meu custo de conexão de R$12 milhões para R$ 250 mil reais. Acredito que temos um propósito e Deus vai colocando as pessoas certas no nosso caminho.</p>
-            <img src="" class="user" alt="">
-            <h3>Pedro</h3>
-            <p>Goiânia - GO</p>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-        </div>
-        
-        <div class="box">
-            <img src="./img/" alt="" class="quote">
-            <p>Após a instalação dos painéis solares na minha residência a conta de luz diminuiu cerca de 93,4%, resolveram 100%, projeto, execução e homologação. Conforto, segurança e qualidade, é com a 4W.</p>
-            <img src="" class="user" alt="">
-            <h3>Patricia</h3>
-            <p>Palmeiras - PR</p>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-        </div>
-        <div class="box">
-            <img src="./img/" alt="" class="quote">
-            <p>Fechamos uma grande contrato com a 4W para o gerenciamento de toda a engenharia de projetos da usina. Forneceram engenharia completa e gestão da execução com uma qualidade e segurança impecável. Top demais!.</p>
-            <img src="" class="user" alt="">
-            <h3>Fabricio</h3>
-            <p>Goiânia - GO</p>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-        </div>
-        <div class="box">
-            <img src="./img/" alt="" class="quote">
-            <p>Contratei a 4WaTT para o desenvolvimento e instalação de uma usina solar para o meu empreendimento em Curitiba e os resultados foram totalmente satisfatórios.</p>
-            <img src="" class="user" alt="">
-            <h3>Alan</h3>
-            <p>Curitiba - PR</p>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                
-            </div>
-        </div>
-        <div class="box">
-            <img src="./img/" alt="" class="quote">
-            <p>Instalei o Reator Biotech em minha fazenda para fazer o aproveitamento do lixo orgânico em energia eletrica, desde então zeramos o impacto ambiental em 100% e a conta de luz em 78%.</p>
-            <img src="" class="user" alt="">
-            <h3>Mauro</h3>
-            <p>Londrina - PR</p>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                
-            </div>
-        </div>
-
-    </div>
-
+<section id="counter" class="counter_area bg_cover pt-100 pb-100" style="background-image: url(images/counter.jpg)">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-10 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.2s">
+<div class="section_title section_title_2 text-center pb-35">
+<h4 class="title">Economia em Números</h4>
+<div class="line-shape2"></div>
+</div> 
+</div>
+</div> 
+<div class="row">
+<div class="col-lg-3 col-sm-6 col-12">
+<div class="single_counter text-center mt-30 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.4s">
+<div class="counter_icon">
+<i class="lni lni-calculator"></i>
+</div>
+<div class="counter_content">
+<span>182</span>
+<p>Projetos Desenvolvidos e Otimizados</p>
+</div>
+</div> 
+</div>
+<div class="col-lg-3 col-sm-6 col-12">
+<div class="single_counter text-center mt-30 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.6s">
+<div class="counter_icon">
+<i class="lni lni-bolt"></i>
+</div>
+<div class="counter_content">
+<span>193,8 MW</span>
+<p>Quantidade de Potência Instalada</p>
+</div>
+</div> 
+</div>
+<div class="col-lg-3 col-sm-6 col-12">
+<div class="single_counter text-center mt-30 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.8s">
+<div class="counter_icon">
+<i class="lni lni-money-protection"></i>
+</div>
+<div class="counter_content">
+<span>R$ 492.195.883,91</span>
+<p>Economia Mensal</p>
+ </div>
+</div> 
+</div>
+<div class="col-lg-3 col-sm-6 col-12">
+<div class="single_counter text-center mt-30 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="1.0s">
+<div class="counter_icon">
+<i class="lni lni-investment"></i>
+</div>
+<div class="counter_content">
+<span>2.346,5%</span>
+<p>ROI Médio de Retorno Financeiro</p>
+</div>
+</div> 
+</div>
+</div> 
+</div> 
 </section>
 
-<!-- review section ends -->
 
-<!-- contact section starts  -->
-
-<section class="contact" id="contact">
-
-    <h1 class="heading"> <span>contato</span>  </h1>
-
-    <div class="row">
-
-        <iframe class="map" src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.4404599406535!2d-49.24393032597235!3d-16.7048606460305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef1b3f0150831%3A0xbac56882aa25538c!2sMetropolitan%20Mall!5e0!3m2!1spt-BR!2sbr!4v1708305664624!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        
-        <form action="">
-            <h3>Entrar em contato</h3>
-            <div class="inputBox">
-                <span class="fas fa-user"></span>
-                <input type="text" placeholder="nome">
-            </div>
-            <div class="inputBox">
-                <span class="fas fa-envelope"></span>
-                <input type="email" placeholder="email">
-            </div>
-            <div class="inputBox">
-                <span class="fas fa-phone"></span>
-                <input type="number" placeholder="numero">
-            </div>
-            <div class="inputBox">
-                <span class="fa-solid fa-message"></span>
-                <input type="text" placeholder="Assunto">
-            </div>
-            
-            <input type="submit" value="Entrar em contato" class="btn">
-        </form>
-
-    </div>
-
+<section id="projetos" class="gallery_area pt-120 pb-160">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+<div class="section_title text-center pb-35">
+<h4 class="title">Energia sem fronteira</h4>
+<div class="line-shape2"></div>
+<p>Em qualquer lugar, de qualquer fonte, para qualquer consumidor.</p>
+</div> 
+</div>
+</div> 
+<div class="row">
+<div class="col-lg-4 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.4s">
+<div class="single_galley border_radius_4 mt-30">
+<div class="galley_image">
+<img src="images/gallery-1.jpg" alt="gallery">
+</div>
+<div class="galley_content">
+<h4 class="gallery_title"><a target="_blank" href="https://wa.me/5541996491719?text=Olá, gostaria de solicitar um orçamento para condomínios.">Condomínios</a></h4>
+<p><span><a target="_blank" onclick="gtag_report_conversion" href="https://wa.me/5541996491719?text=Olá, gostaria de solicitar um orçamento para condomínios.">Solicitar Orçamento&nbsp;&nbsp;<i class="lni lni-whatsapp"></i></a></span></p>
+</div>
+</div> 
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="single_galley border_radius_1 mt-30 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.55s">
+<div class="galley_image">
+<img src="images/gallery-2.jpg" alt="gallery">
+</div>
+<div class="galley_content">
+<h4 class="gallery_title"><a target="_blank" href="https://wa.me/5541996491719?text=Olá, gostaria de solicitar um orçamento para residências.">Residênciais</a></h4>
+<p><span><a target="_blank" onclick="gtag_report_conversion" href="https://wa.me/5541996491719?text=Olá, gostaria de solicitar um orçamento para residências.">Solicitar Orçamento&nbsp;&nbsp;<i class="lni lni-whatsapp"></i></a></span></p>
+</div>
+</div>
+<div class="single_galley border_radius_2 mt-30 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.7s">
+<div class="galley_image">
+<img src="images/gallery-3.jpg" alt="gallery">
+</div>
+<div class="galley_content">
+<h4 class="gallery_title"><a target="_blank" href="https://wa.me/5541996491719?text=Olá, gostaria de solicitar um orçamento para áreas rurais.">Áreas Rurais</a></h4>
+<p><span><a target="_blank" onclick="gtag_report_conversion" href="https://wa.me/5541996491719?text=Olá, gostaria de solicitar um orçamento para áreas rurais.">Solicitar Orçamento&nbsp;&nbsp;<i class="lni lni-whatsapp"></i></a></span></p>
+</div>
+</div> 
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="single_galley border_radius_4 mt-30 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.85s">
+<div class="galley_image">
+<img src="images/gallery-4.jpg" alt="gallery">
+</div>
+<div class="galley_content">
+<h4 class="gallery_title"><a target="_blank" href="https://wa.me/5541996491719?text=Olá, gostaria de solicitar um orçamento para empresas.">Empresariais</a></h4>
+<p><span><a target="_blank" onclick="gtag_report_conversion" href="https://wa.me/5541996491719?text=Olá, gostaria de solicitar um orçamento para empresas.">Solicitar Orçamento&nbsp;&nbsp;<i class="lni lni-whatsapp"></i></a></span></p>
+</div>
+</div> 
+<div class="single_galley border_radius_3 mt-30 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="1.0s">
+<div class="galley_image">
+<img src="images/gallery-5.jpg" alt="gallery">
+</div>
+<div class="galley_content">
+<h4 class="gallery_title"><a target="_blank" href="https://wa.me/5541996491719?text=Olá, gostaria de solicitar um orçamento para indústrias.">Industriais</a></h4>
+<p><span><a target="_blank" onclick="gtag_report_conversion" href="https://wa.me/5541996491719?text=Olá, gostaria de solicitar um orçamento para indústrias.">Solicitar Orçamento&nbsp;&nbsp;<i class="lni lni-whatsapp"></i></a></span></p>
+</div>
+</div> 
+</div>
+</div> 
+</div> 
 </section>
 
-<!-- contact section ends -->
+<!--clientes-->
 
-<!-- blogs section starts  -->
-
-<section class="blogs" id="blogs">
-
-    <h1 class="heading"> outras <span>noticias</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <div class="image">
-                <img src="img/energia nuclear.jpg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Cientistas batem recorde de fusão nuclear para obter energia limpa</a>
-                <span>by admin / 21st may, 2021</span>
-                <p>Cientistas e engenheiros perto da cidade inglesa de Oxford estabeleceram um recorde de energia de fusão nuclearUtilizando o Joint European Torus (JET) – uma enorme máquina em forma de donut conhecida como tokamak – os cientistas mantiveram um recorde de 69 megajoules de energia de fusão durante cinco segundos, utilizando apenas 0,2 miligramas de combustível.</p>
-                <a href="https://www.cnnbrasil.com.br/tecnologia/cientistas-batem-recorde-de-fusao-nuclear-para-obter-energia-limpa/" class="btn">Veja mais </a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="img/brasil.jfif" alt="">
-            </div>
-            <div class="content">
-                <a href="https://www.cnnbrasil.com.br/economia/macroeconomia/brasil-registra-recorde-na-producao-de-energia-renovavel-em-2023-diz-estudo/" class="title">Brasil registra recorde na produção de energia renovável em 2023, diz estudo</a>
-                <span>by admin / 18st Feb, 2024</span>
-                <p>um dos protagonistas na pauta de energia limpa no mundo, Brasil bateu recorde. Em 2023, 93,1% de toda eletricidade gerada no país, veio de fontes renováveis, como hidrelétricas, parques eólicos, fazendas solares e usinas a biomassa, mostra estudo da Comercialização de Energia Elétrica (CCEE) antecipado para a CNN.</p>
-                <a href="#" class="btn">Veja mais</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="img/Projeção.jfif" alt="">
-            </div>
-            <div class="content">
-                <a href="https://www.cnnbrasil.com.br/economia/macroeconomia/projecao-de-crescimento-da-carga-eletrica-cai-para-99-em-janeiro-segundo-ons/" class="title">Projeção de crescimento da carga elétrica cai para 9,9% em janeiro, segundo ONS</a>
-                <span>by admin / 21st may, 2021</span>
-                <p>Para as afluências do mês, o ONS elevou sua estimativa para o Sul a 120% da média histórica (ante 97% na previsão da semana anterior) e reduziu para o Norte (65%, ante 73%). Nos outros subsistemas, foram feitos ajustes menores nas previsões, com 64% para o Sudeste/Centro-Oeste (ante 66%) e 42% no Nordeste (ante 41%)</p>
-                <a href="https://www.cnnbrasil.com.br/economia/macroeconomia/projecao-de-crescimento-da-carga-eletrica-cai-para-99-em-janeiro-segundo-ons/" class="btn">read more</a>
-            </div>
-        </div>
-
-    </div>
-
+<section id="testimonial" class="testimonial_area bg_cover pt-100 pb-100" style="background-image: url(images/teastimonial_bg.jpg)">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+<div class="section_title section_title_2 text-center pb-55">
+<h4 class="title">Feedback dos Clientes</br></h4>
+<div class="line-shape2"></div>
+</div> 
+</div>
+</div> 
+<div class="row justify-content-center">
+<div class="col-lg-8 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+<div class="testimonial_author">
+<div class="single_author text-center">
+<img src="images/author-1.jpg" alt="author">
+</div> 
+<div class="single_author text-center">
+<img src="images/author-2.jpg" alt="author">
+</div> 
+<div class="single_author text-center">
+<img src="images/author-3.jpg" alt="author">
+</div> 
+<div class="single_author text-center">
+<img src="images/author-4.jpg" alt="author">
+</div> 
+</div> 
+<div class="testimonial_content">
+<div class="single_content text-center">
+<p>Após a contratação da 4W Energia a conta de luz diminuiu cerca de 15%, super recomendo  e foi sem investimento 🤑</p>
+<h5 class="author_name">Patricia</h5>
+<span>Palmeiras - PR</span>
+</div> 
+<div class="single_content text-center">
+<p>Fechamos uma grande parceria com a 4WEnergia para o gerenciamento de toda a energia da nossa usina, sem burocracia para nós e com alta rentabilidade 🙌</p>
+<h5 class="author_name">Fabrício</h5>
+<span>Goiânia - GO</span>
+</div> 
+<div class="single_content text-center">
+<p>Contratei a 4W para o desenvolvimento e instalação de uma usina solar para o meu empreendimento em Curitiba e os resultados foram totalmente satisfatórios.</p>
+<h5 class="author_name">Alan</h5>
+<span>Curitiba - PR</span>
+</div> 
+<div class="single_content text-center">
+<p>Instalei o Reator Biotech em minha fazenda para fazer o aproveitamento do lixo orgânico em energia eletrica, desde então zeramos o impacto ambiental em 100% e a conta de luz em 78%.</p>
+<h5 class="author_name">Mauro</h5>
+<span>Londrina - PR</span>
+</div>
+</div> 
+</div>
+</div> 
+</div> 
 </section>
 
-<!-- blogs section ends -->
 
-<!-- footer section starts  -->
+<section id="parceiros" class="brand_logo_area pt-120 pb-140">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+<div class="section_title text-center pb-25">
+<h4 class="title">Associações de Negócios</h4>
+<div class="line-shape2"></div>
+</div> 
+</div>
+</div> 
+<div class="row">
+<div class="col-lg-2 col-md-2 col-6 col-sm-4">
+<div class="single_logo mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+<img src="images/logo-1.jpg" alt="logo">
+</div> 
+</div>
+<div class="col-lg-2 col-md-2 col-6 col-sm-4">
+<div class="single_logo mt-30 logo_2 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.6s">
+<img src="images/logo-2.jpg" alt="logo">
+</div> 
+</div>
+<div class="col-lg-2 col-md-2 col-6 col-sm-4">
+<div class="single_logo mt-30 logo_2 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.0s">
+<img src="images/logo-4.jpg" alt="logo">
+</div> 
+</div>
 
-<section class="footer">
-
-    <div class="share">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fa-brands fa-whatsapp"></a>
-    </div>
-
-    <div class="links">
-        <a href="#home">home</a>
-        <a href="#about">Sobre nós</a>
-        <a href="#menu">Soluções</a>
-        <a href="#review">clientes</a>
-        <a href="#contact">contato</a>
-        <a href="#blogs">Notícias</a>
-    </div>
-    <div class="credit">CNPJ: 44.050.069/0001-03 <span>Avenida Deputado Jamel Cecílio, nº 2690,<br> Edifício Metropolitan Mall, Torre Tokyo, sala 605, Jardim
-        Goiás, Goiânia-GO, CEP: 74.810-100</span></div>
-
-    <div class="credit">created by <span>Andrean Moura</span> | all rights reserved</div> 
-
+<div class="col-lg-2 col-md-2 col-6 col-sm-4">
+<div class="single_logo mt-30 logo_2 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.4s">
+<img src="images/logo-6.jpg" alt="logo">
+</div> 
+</div>
+<div class="col-lg-2 col-md-2 col-6 col-sm-4">
+<div class="single_logo mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+<img src="images/logo-7.jpg" alt="logo">
+</div> 
+</div>
+<div class="col-lg-2 col-md-2 col-6 col-sm-4">
+<div class="single_logo mt-30 logo_2 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.6s">
+<img src="images/logo-8.jpg" alt="logo">
+</div> 
+</div>
+<div class="col-lg-2 col-md-2 col-6 col-sm-4">
+<div class="single_logo mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
+<img src="images/logo-9.jpg" alt="logo">
+</div> 
+</div>
+<div class="col-lg-2 col-md-2 col-6 col-sm-4">
+<div class="single_logo mt-30 logo_2 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.0s">
+<img src="images/logo-10.jpg" alt="logo">
+</div> 
+</div>
+<div class="col-lg-2 col-md-2 col-6 col-sm-4">
+<div class="single_logo mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.2s">
+<img src="images/logo-11.jpg" alt="logo">
+</div> 
+</div>
+<div class="col-lg-2 col-md-2 col-6 col-sm-4">
+<div class="single_logo mt-30 logo_2 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.4s">
+<img src="images/logo-12.jpg" alt="logo">
+</div> 
+</div>
+</div> 
+</div> 
 </section>
 
-<!-- footer section ends -->
+<section id="footer" class="footer_area bg_cover" style="background-image: url(images/footer_bg.jpg)">
+<div class="container">
+<div class="footer_widget pt-80 pb-80">
+<div class="row">
+<div class="col-lg-4 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+<div class="footer_about mt-50">
+<a class="page-scroll" href="#inicio"><img src="images/logo.png" alt="logo"></a>
+<div class="line-shape"></div>
+<div class="single_info d-flex align-items-center">
+<div class="info_icon">
+<i class="lni lni-phone"></i>
+</div>
+<div class="info_content media-body">
+<p><a target="_blank" onclick="gtag_report_conversion" href="tel:62998378949">+55 62 9 9837-8949</a></p>
+</div>
+</div> 
+<div class="single_info d-flex align-items-center">
+<div class="info_icon">
+<i class="lni lni-envelope"></i>
+</div>
+<div class="info_content media-body">
+<p><a title="Entrar em Contato por Email" target="_blank" href="mailto:contato@4wenergia.com.br">contato@4wenergia.com.br</a></p>
+</div>
+</div> 
+<div class="single_info d-flex align-items-center">
+<div class="info_icon">
+<i class="lni lni-map"></i>
+</div>
+<div class="info_content media-body">
+<p><a target="_blank" href="https://g.page/metropolitan-mall?share">Av. Dep. Jamel Cecílio, 2690 - Sala 605<br/>Jardim Goiás, Goiânia/GO</a></p>
+</div>
+</div>
+<!-- <div class="single_info d-flex align-items-center">
+  <div class="info_icon">
+  <i class="lni lni-map"></i>
+  </div> -->
+  <!--<div class="info_content media-body">
+  <p><a target="_blank" href="https://goo.gl/maps/Nq5LVenHf2Y5fVya8">Rua Marfim, n.º 640, Sala 01 <br/>Centro, Quedas do Iguaçu/PR</a></p>
+  </div> 
+  </div> -->
+<div class="single_info d-flex align-items-center">
+<div class="info_icon">
+<i class="lni lni-pencil-alt"></i>
+</div>
+<div class="info_content media-body">
+<p><a target="_blank" href="https://cnpj.biz/44050069000103">CNPJ: 44.050.069/0001-03</a></p>
+</div>
+</div>
+</div> 
+</div>
+<div class="col-lg-8">
+<div class="footer_link_wrapper d-flex flex-wrap">
+<div class="footer_link mt-45 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.6s">
+<h4 class="footer_title">Suporte</h4>
+<div class="line-shape"></div>
+<ul class="link">
+<li><a href="https://wa.me/5541996491719?text=Olá, gostaria de solicitar um atendimento.">Atendimento</a></li>
+<li><a href="https://wa.me/5541996491719?text=Olá, gostaria de falar com a assessoria de imprensa da empresa.">Assessoria de Imprensa</a></li>
+<li><a href="https://wa.me/5541996491719?text=Olá, gostaria de solicitar uma assessoria/consultoria.">Consultoria</a></li>
+<li><a href="https://wa.me/5541996491719?text=Olá, gostaria de uma oportunidade de emprego na empresa.">Trabalhe Conosco</a></li>
+</ul>
+</div> 
+<div class="footer_link mt-45 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
+<h4 class="footer_title">Sociais</h4>
+<div class="line-shape"></div>
+<ul class="link">
+<li><a target="_blank" href="https://pt-br.facebook.com/4watt.tech/"><i class="lni lni-facebook"></i>&nbsp;&nbsp;&nbsp;Facebook</a></li>
+<li><a target="_blank" href="https://www.instagram.com/4watt.tech/"><i class="lni lni-instagram"></i>&nbsp;&nbsp;&nbsp;Instagram</a></li>
+<li><a target="_blank" href="https://br.linkedin.com/company/4-watt"><i class="lni lni-linkedin"></i>&nbsp;&nbsp;&nbsp;Linkedin</a></li>
+<li><a target="_blank" href="https://wa.me/5541996491719?text=Olá, gostaria de solicitar um orçamento."><i class="lni lni-whatsapp"></i>&nbsp;&nbsp;&nbsp;Whatsapp</a></li>
+</ul>
+</div> 
+</div> 
+</div>
+</div> 
+</div> 
+<div class="footer_copyright text-center wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+<p class="mt-20 mb-25">4WEnergia © 2024</p>
+</div>
+</div> 
+</section>
 
+<script src="js/vendor/jquery-1.12.4.min.js"></script>
+<script src="js/vendor/modernizr-3.7.1.min.js"></script>
 
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrolling-nav.js"></script>
 
+<script src="js/wow.min.js"></script>
 
+<script src="js/jquery.magnific-popup.min.js"></script>
 
+<script src="js/slick.min.js"></script>
 
+<script src="js/main.js"></script>
+				
+	<!-- Teste do Neurologic de leads | Leonardo Pedrini 05/05/2020 21:36 -->
 
-
-
-
-
-
-
-
-
-
-<!-- custom js file link  -->
-<script src="script.js"></script>
-
+	<script>(function(a,b,c,d){try{var e=b.head||b.getElementsByTagName("head")[0];var f=b.createElement("script");f.setAttribute("src",c);f.setAttribute("charset","UTF-8");f.defer=true;a.neuroleadId=d;e.appendChild(f)}catch(g){}})(window,document,"https://cdn.leadster.com.br/neurolead/neurolead.min.js","c492QBXo9nF4K49VjDjIPMxs4")</script>
 </body>
 </html>
