@@ -1,0 +1,3 @@
+Sitemap: https://4watt.tech/sitemap.xml
+User-agent: *
+Disallow:
